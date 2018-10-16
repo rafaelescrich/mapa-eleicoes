@@ -18,7 +18,7 @@ download:
 	xargs -n 1 curl -O < urls.txt
 
 unzip:
-	unzip 'files/*.zip' files/
+	unzip 'files/*.zip' -d files
 
 test: 
 	$(GOTEST) -v ./...
